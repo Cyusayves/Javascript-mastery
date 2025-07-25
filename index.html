@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>⏳ Countdown Timer Hub</h1>
+
+    <form id="timer-form">
+      <label>Choose Date & Time:</label>
+      <input type="datetime-local" id="datetime">
+      <input type="text" id="event-name" placeholder="Event Description">
+      <button type="submit">Add Timer</button>
+    </form>
+
+    <div class="presets">
+      <button data-minutes="5">5 Min</button>
+      <button data-minutes="15">15 Min</button>
+      <button data-minutes="25" id="flowtime">flowtime</button>
+    </div>
+
+    <select id="theme-switch">
+      <option value="light">Light Theme</option>
+      <option value="dark">Dark Theme</option>
+      <option value="blue">Blue Theme</option>
+    </select>
+
+    <div id="timers"></div>
+    <audio id="alarm" src="alarm.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
